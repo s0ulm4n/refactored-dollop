@@ -1,6 +1,6 @@
 # Npm Token Test TypeScript API Library
 
-[![NPM version](<https://img.shields.io/npm/v/npm-token-test.svg?label=npm%20(stable)>)](https://npmjs.org/package/npm-token-test) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/npm-token-test)
+[![NPM version](<https://img.shields.io/npm/v/@s0ulman/npm-token-test.svg?label=npm%20(stable)>)](https://npmjs.org/package/@s0ulman/npm-token-test) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@s0ulman/npm-token-test)
 
 This library provides convenient access to the Npm Token Test REST API from server-side TypeScript or JavaScript.
 
@@ -11,11 +11,8 @@ It is generated with [Stainless](https://www.stainless.com/).
 ## Installation
 
 ```sh
-npm install git+ssh://git@github.com:s0ulm4n/refactored-dollop.git
+npm install @s0ulman/npm-token-test
 ```
-
-> [!NOTE]
-> Once this package is [published to npm](https://www.stainless.com/docs/guides/publish), this will become: `npm install npm-token-test`
 
 ## Usage
 
@@ -23,7 +20,7 @@ The full API of this library can be found in [api.md](api.md).
 
 <!-- prettier-ignore -->
 ```js
-import NpmTokenTest from 'npm-token-test';
+import NpmTokenTest from '@s0ulman/npm-token-test';
 
 const client = new NpmTokenTest({
   username: process.env['NPM_TOKEN_TEST_USERNAME'], // This is the default and can be omitted
@@ -41,7 +38,7 @@ This library includes TypeScript definitions for all request params and response
 
 <!-- prettier-ignore -->
 ```ts
-import NpmTokenTest from 'npm-token-test';
+import NpmTokenTest from '@s0ulman/npm-token-test';
 
 const client = new NpmTokenTest({
   username: process.env['NPM_TOKEN_TEST_USERNAME'], // This is the default and can be omitted
@@ -164,7 +161,7 @@ The log level can be configured in two ways:
 2. Using the `logLevel` client option (overrides the environment variable if set)
 
 ```ts
-import NpmTokenTest from 'npm-token-test';
+import NpmTokenTest from '@s0ulman/npm-token-test';
 
 const client = new NpmTokenTest({
   logLevel: 'debug', // Show all log messages
@@ -192,7 +189,7 @@ When providing a custom logger, the `logLevel` option still controls which messa
 below the configured level will not be sent to your logger.
 
 ```ts
-import NpmTokenTest from 'npm-token-test';
+import NpmTokenTest from '@s0ulman/npm-token-test';
 import pino from 'pino';
 
 const logger = pino();
@@ -261,7 +258,7 @@ globalThis.fetch = fetch;
 Or pass it to the client:
 
 ```ts
-import NpmTokenTest from 'npm-token-test';
+import NpmTokenTest from '@s0ulman/npm-token-test';
 import fetch from 'my-fetch';
 
 const client = new NpmTokenTest({ fetch });
@@ -272,7 +269,7 @@ const client = new NpmTokenTest({ fetch });
 If you want to set custom `fetch` options without overriding the `fetch` function, you can provide a `fetchOptions` object when instantiating the client or making a request. (Request-specific options override client options.)
 
 ```ts
-import NpmTokenTest from 'npm-token-test';
+import NpmTokenTest from '@s0ulman/npm-token-test';
 
 const client = new NpmTokenTest({
   fetchOptions: {
@@ -289,7 +286,7 @@ options to requests:
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/node.svg" align="top" width="18" height="21"> **Node** <sup>[[docs](https://github.com/nodejs/undici/blob/main/docs/docs/api/ProxyAgent.md#example---proxyagent-with-fetch)]</sup>
 
 ```ts
-import NpmTokenTest from 'npm-token-test';
+import NpmTokenTest from '@s0ulman/npm-token-test';
 import * as undici from 'undici';
 
 const proxyAgent = new undici.ProxyAgent('http://localhost:8888');
@@ -303,7 +300,7 @@ const client = new NpmTokenTest({
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/bun.svg" align="top" width="18" height="21"> **Bun** <sup>[[docs](https://bun.sh/guides/http/proxy)]</sup>
 
 ```ts
-import NpmTokenTest from 'npm-token-test';
+import NpmTokenTest from '@s0ulman/npm-token-test';
 
 const client = new NpmTokenTest({
   fetchOptions: {
@@ -315,7 +312,7 @@ const client = new NpmTokenTest({
 <img src="https://raw.githubusercontent.com/stainless-api/sdk-assets/refs/heads/main/deno.svg" align="top" width="18" height="21"> **Deno** <sup>[[docs](https://docs.deno.com/api/deno/~/Deno.createHttpClient)]</sup>
 
 ```ts
-import NpmTokenTest from 'npm:npm-token-test';
+import NpmTokenTest from 'npm:@s0ulman/npm-token-test';
 
 const httpClient = Deno.createHttpClient({ proxy: { url: 'http://localhost:8888' } });
 const client = new NpmTokenTest({

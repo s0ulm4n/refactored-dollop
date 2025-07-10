@@ -1,5 +1,5 @@
 {
-  "name": "npm-token-test",
+  "name": "@s0ulman/npm-token-test",
   "version": "0.0.1-alpha.0",
   "description": "The official TypeScript library for the Npm Token Test API",
   "author": "Npm Token Test <>",
@@ -47,8 +47,8 @@
     "typescript": "5.8.3"
   },
   "imports": {
-    "npm-token-test": ".",
-    "npm-token-test/*": "./src/*"
+    "@s0ulman/npm-token-test": ".",
+    "@s0ulman/npm-token-test/*": "./src/*"
   },
   "exports": {
     ".": {

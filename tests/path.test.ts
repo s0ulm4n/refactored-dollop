@@ -1,4 +1,4 @@
-import { createPathTagFunction, encodeURIPath } from 'npm-token-test/internal/utils/path';
+import { createPathTagFunction, encodeURIPath } from '@s0ulman/npm-token-test/internal/utils/path';
 import { inspect } from 'node:util';
 import { runInNewContext } from 'node:vm';
 
