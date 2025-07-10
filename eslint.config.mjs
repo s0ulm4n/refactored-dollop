@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^npm-token-test(/.*)?',
+              regex: '^@s0ulman/npm-token-test(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

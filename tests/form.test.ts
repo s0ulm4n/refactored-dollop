@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'npm-token-test/internal/uploads';
-import { toFile } from 'npm-token-test/core/uploads';
+import { multipartFormRequestOptions, createForm } from '@s0ulman/npm-token-test/internal/uploads';
+import { toFile } from '@s0ulman/npm-token-test/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

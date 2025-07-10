@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import NpmTokenTest from 'npm-token-test';
+import NpmTokenTest from '@s0ulman/npm-token-test';
 
 const client = new NpmTokenTest({
   username: 'My Username',

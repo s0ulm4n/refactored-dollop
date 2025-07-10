@@ -1,12 +1,12 @@
 {
-  "name": "npm-token-test",
-  "version": "0.0.1-alpha.0",
+  "name": "@s0ulman/npm-token-test",
+  "version": "0.1.0-alpha.1",
   "description": "The official TypeScript library for the Npm Token Test API",
   "author": "Npm Token Test <>",
   "types": "dist/index.d.ts",
   "main": "dist/index.js",
   "type": "commonjs",
-  "repository": "github:stainless-sdks/npm-token-test-typescript",
+  "repository": "github:s0ulm4n/refactored-dollop",
   "license": "Apache-2.0",
   "packageManager": "yarn@1.22.22",
   "files": [
@@ -47,8 +47,8 @@
     "typescript": "5.8.3"
   },
   "imports": {
-    "npm-token-test": ".",
-    "npm-token-test/*": "./src/*"
+    "@s0ulman/npm-token-test": ".",
+    "@s0ulman/npm-token-test/*": "./src/*"
   },
   "exports": {
     ".": {
