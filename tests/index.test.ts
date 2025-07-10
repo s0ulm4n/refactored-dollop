@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'npm-token-test/core/api-promise';
+import { APIPromise } from '@s0ulman/npm-token-test/core/api-promise';
 
 import util from 'node:util';
-import NpmTokenTest from 'npm-token-test';
-import { APIUserAbortError } from 'npm-token-test';
+import NpmTokenTest from '@s0ulman/npm-token-test';
+import { APIUserAbortError } from '@s0ulman/npm-token-test';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

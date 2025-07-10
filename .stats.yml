@@ -1,4 +1,4 @@
 configured_endpoints: 14
 openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/test-org-123%2Fnpm-token-test-e9a86dc1bc91693527b39e3540105c9a3a47ade6bed61d5d0cdc70a0869313f3.yml
 openapi_spec_hash: 1aaea7f07cba02ebc66b19e828754c3c
-config_hash: fdedd61725ac66e56f02dd308f892142
+config_hash: 6efb8b96639cfda744394af1a3907ad4
