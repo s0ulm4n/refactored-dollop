@@ -42,15 +42,15 @@ If you’d like to use the repository from source, you can either install from g
 To install via git:
 
 ```sh
-$ npm install git+ssh://git@github.com:stainless-sdks/npm-token-test-typescript.git
+$ npm install git+ssh://git@github.com:s0ulm4n/refactored-dollop.git
 ```
 
 Alternatively, to link a local copy of the repo:
 
 ```sh
 # Clone
-$ git clone https://www.github.com/stainless-sdks/npm-token-test-typescript
-$ cd npm-token-test-typescript
+$ git clone https://www.github.com/s0ulm4n/refactored-dollop
+$ cd refactored-dollop
 
 # With yarn
 $ yarn link
