@@ -789,9 +789,11 @@ export class NpmTokenTest {
   users: API.Users = new API.Users(this);
   tags: API.Tags = new API.Tags(this);
 }
+
 NpmTokenTest.Todos = Todos;
 NpmTokenTest.Users = Users;
 NpmTokenTest.Tags = Tags;
+
 export declare namespace NpmTokenTest {
   export type RequestOptions = Opts.RequestOptions;
 
