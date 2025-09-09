@@ -25,6 +25,7 @@ import NpmTokenTest from '@s0ulman/npm-token-test';
 const client = new NpmTokenTest({
   username: process.env['NPM_TOKEN_TEST_USERNAME'], // This is the default and can be omitted
   password: process.env['NPM_TOKEN_TEST_PASSWORD'], // This is the default and can be omitted
+  apiKey: process.env['NPM_TOKEN_TEST_API_KEY'], // This is the default and can be omitted
 });
 
 const todos = await client.todos.list();
@@ -43,6 +44,7 @@ import NpmTokenTest from '@s0ulman/npm-token-test';
 const client = new NpmTokenTest({
   username: process.env['NPM_TOKEN_TEST_USERNAME'], // This is the default and can be omitted
   password: process.env['NPM_TOKEN_TEST_PASSWORD'], // This is the default and can be omitted
+  apiKey: process.env['NPM_TOKEN_TEST_API_KEY'], // This is the default and can be omitted
 });
 
 const todos: NpmTokenTest.TodoListResponse = await client.todos.list();

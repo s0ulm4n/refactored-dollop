@@ -9,7 +9,7 @@ const client = new NpmTokenTest({
 });
 
 describe('resource users', () => {
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: only required params', async () => {
     const responsePromise = client.users.create({
       name: 'John Doe',
@@ -25,7 +25,7 @@ describe('resource users', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('create: required and optional params', async () => {
     const response = await client.users.create({
       name: 'John Doe',
@@ -34,7 +34,7 @@ describe('resource users', () => {
     });
   });
 
-  // skipped: tests are disabled for the time being
+  // Prism tests are disabled
   test.skip('retrieveMe', async () => {
     const responsePromise = client.users.retrieveMe();
     const rawResponse = await responsePromise.asResponse();
